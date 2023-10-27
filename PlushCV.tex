@@ -1,0 +1,285 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PlushCV - One Page Two Column Resume
+% LaTeX Template
+% Version 1.0 (11/28/2021)
+%
+% Author:
+% Shubham Mazumder (http://mazumder.me)
+%
+% Hacked together from:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add more icon options 
+% 4. Fix hacky left alignment on contact line
+% 5. Remove Hacky fix for awkward extra vertical space
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the vertical limit.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%Icons:
+%%Main: https://icons8.com/icons/carbon-copy
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{plushcv}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\namesection{Zhaolin}{(William)}{Zhang}{Software Engineer}{\contactline{\href{https://williamzzl.github.io/}{williamzzl.github.io}}{\href{https://www.linkedin.com/}{williamzzl}}{\href{mailto:william.n.zhang@gmail.com}{william.n.zhang@gmail.com}}{\href{tel:+46 725820517}{+46 725820517}}}
+
+% \namesection{Firstname}{Lastname}{Full Stack Software Engineer}{\contactline{\href{https://www.mazumder.me}{mazumder.me}}{\href{https://www.github.com/sansquoi}{sansquoi}}{\href{https://www.linkedin.com/mazumders}{mazumders}}{\href{mailto:shubham.mazumder@gmail.com}{first.last@email.com}}{\href{tel:+1999999999}{9999999999}}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.70\textwidth} 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PROFILE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Profile}
+An adept DevOps engineer with expertise in software products and CI/CD pipelines, having worked on significant projects in development and maintenance.
+
+With 16+ years of unwavering dedication to the telecom industry in both RAN and core network domains, granting me a comprehensive understanding of tele operator service.
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+\runsubsection{Ericsson RAN Transport Function}
+\descript{| Software Developer}
+\location{July 2021 – Current | Stockholm}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\sectionsep
+\item Created switched backhole feature in RBS Transport Function in design, test and delivery.
+\item Performed refactor of TF TestNG module for multi-ports support.
+\item Issued StreetMacro 6705 integration and delivery in Transport Function.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Ericsson Packet Core 5G}
+\descript{| Gateway Developer }
+\location{December 2019 – July 2021 | Stockholm}
+\begin{tightemize}
+\sectionsep
+\item Leaded TLS implementation on Redis cluster in design, test and delivery.
+\item Created SM-Controller ISP event for accuracy cluster behaviour monitoring.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Ericsson IP Multimedia Subsystem}
+\descript{| MTAS Developer }
+\location{September 2017 – December 2019 | Stockholm}
+\begin{tightemize}
+\sectionsep
+\item Provided 24x7 emergency line support by negotiating and resolving problems with customer products
+and equipment.
+\item Responsible for maintenance and troubleshooting issues on MTAS SIP framework on 3G, 4G and 5G.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Ericsson Digital Service}
+\descript{| eMBMS senior Developer }
+\location{January 2010 – September 2017 | Shanghai, China}
+\begin{tightemize}
+\sectionsep
+\item Leaded whole feature development and maintenance of BDC (Broadcast Delivery Center) system in eMBMS product.
+\item Joined on-site embms 15A upgrade support for U.S. Verizon in Dallas and Detroit.
+\item Provided 24x7 emergency line support for BMC and BDC by troubleshooting and restoring with customer products for Verizon, U.s. and Telstra, Australia
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Streamezzo (Amdocs)}
+\descript{| Operation and Maintenance Engineer }
+\location{September 2009 – January 2010 | Shanghai, China}
+\begin{tightemize}
+\sectionsep
+\item Leaded whole feature development and maintenance of BDC (Broadcast Delivery Center) system in eMBMS product.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Huawei}
+\descript{| Java Developer }
+\location{September 2007 – September 2009 | Shenzhen, China}
+\begin{tightemize}
+\sectionsep
+\item Responsible for Huawei RTSP steaming system integration with F5 Load Balancer.
+\item Provided on-site HMS (Huwei Media Streaming) system customization and upgrade support for Visafone, Nigeria.
+\end{tightemize}
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Projects
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\section{Projects}
+%
+%\runsubsection{Chess Engine}
+%\descript{| C++}
+%\location{2018}
+%\begin{tightemize}
+%\item Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper venenatis nisi at suscipit. Vestibulum vel odio in diam ultrices posuere. Cras suscipit faucibus ullamcorper.
+%\item Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper venenatis nisi at suscipit.
+%\end{tightemize}
+%\sectionsep
+%
+%\runsubsection{Speech-enabled Chatbot}
+%\descript{| C\#, Microsoft Bot Framework}
+%\location{2018}
+%\begin{tightemize}
+%\item Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper venenatis nisi at suscipit. Vestibulum vel odio in diam ultrices posuere. Cras suscipit faucibus ullamcorper. 
+%\item Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper venenatis nisi at suscipit.
+%\end{tightemize}
+%\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Awards} 
+% \begin{tabular}{rll}
+% 2020	     & Finalist & Lorem Ipsum\\
+% 2018	     & $2^{nd}$ & Dolor Sit Amet\\
+% 2015	     & Finalist  & Cras posuere\\
+% \\
+% \end{tabular}
+% \sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.25\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+\sectionsep
+\location{Proficient:}
+C++ \textbullet{} JAVA \textbullet{} Shell \textbullet{} Python    \\ SQL \textbullet{} HTML \\
+\sectionsep
+\location{Familiar:}
+Go \textbullet{} R \\
+\sectionsep
+\sectionsep
+\subsection{Libraries/Frameworks}
+\sectionsep
+Protobuf \textbullet{} Boost \textbullet{} TestNG \textbullet{} Ericsson ADP \\
+\sectionsep
+\sectionsep
+\subsection{Tools/Platforms}
+\sectionsep
+Git \textbullet{} Jenkins \textbullet{} Valgrind \textbullet{} Redis    \\ Kubernet \textbullet{} Docker \\
+\sectionsep
+\sectionsep
+\subsection{Big Data}
+\sectionsep
+Pandas \textbullet{} Sklearn \textbullet{} Hadoop \\Oracle \textbullet{} Sqlite \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+\subsection{Northeastern University}
+\location{June 2003 - July 2007 | Shenyang, China}
+\location{Bachelor of Engineering}
+\location{Software Engineering}
+
+\sectionsep
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %     REFERENCES
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\section{References} 
+%\href{https://www.linkedin.com/company/john-doe/}{\textbf{John Doe}, Senior Software Developer, Tyrell Corp}
+%\begingroup
+%\setbox0=\hbox{
+%\includegraphics[scale=0.1,trim={0 1cm 0cm 0cm}]{icons/main/mail.png}\hspace{0.3cm} john.doe@email.com
+%}
+%\parbox{\wd0}{\box0}
+%\endgroup
+%\begingroup
+%\setbox0=\hbox{
+%\includegraphics[scale=0.1,trim={0 1.25cm -0.4cm 0cm}]{icons/main/phone.png}\hspace{0.3cm}+19999999999
+%}
+%\parbox{\wd0}{\box0}\endgroup
+%\\
+%\sectionsep
+%\href{https://www.linkedin.com/company/john-doe/}{\textbf{Jane Doe}}, Senior Software Developer, Primatech 
+%\\
+%\begingroup
+%\setbox0=\hbox{
+%\includegraphics[scale=0.1,trim={0 1cm 0cm 0cm}]{icons/main/mail.png}\hspace{0.3cm} jane.doe@email.com
+%}
+%\parbox{\wd0}{\box0}
+%\endgroup
+%\begingroup
+%\setbox0=\hbox{
+%\includegraphics[scale=0.1,trim={0 1.25cm -0.4cm 0cm}]{icons/main/phone.png}\hspace{0.3cm}+19999999999
+%}
+%\parbox{\wd0}{\box0}\endgroup
+%\\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Coursework}
+
+% \subsection{Graduate}
+% Graduate Algorithms \textbullet{}\\ 
+% Advanced Computer Architecture \textbullet{}\\ 
+% Operating Systems \textbullet{}\\ 
+% Artificial Intelligence \textbullet{}\\
+% Visualization For Scientific Data \\
+% \sectionsep
+
+% \subsection{Undergraduate}
+
+% Database Management Systems \textbullet{}\\
+% Object Oriented Analysis and Design \textbullet{}\\
+% Artificial Intelligence and Expert Systems \textbullet{}\\
+% Scripting Languages and Web Tech \textbullet{}\\
+% Software Engineering \\
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
+
